@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>SquidBase Framework</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #app-container {
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id='app-container'></div>
+
+    <script src="squidBase.js"></script>
+
+    <script>
+        //USAGE :
+        const ui = new SquidBase();
+        const mainLayout = ui.addLayout('Linear', 'FillXY');
+
+        const btn = ui.addButton('Hello', 0.5, 0.1, mainLayout, { top: '50px', left: '5px' });
+        btn.setOnTouch(() => alert('Hello'));
+
+        ui.render('app-container');
+    </script>
+</body>
+
+</html>
