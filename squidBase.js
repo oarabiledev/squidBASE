@@ -8,8 +8,8 @@ function loadInterface(interfaceName) {
         case 'Material Design 3':
             link.href = `md3.css`;
             break;
-        case 'Material Design 2':
-            link.href = `md2.css`;
+        case 'Native Design':
+            link.href = ``;
     }
     head.appendChild(link);
     
@@ -18,7 +18,12 @@ function loadInterface(interfaceName) {
     switch(interfaceName){
         case 'Material Design 3':
             jsScript.src = `Material Design 3.js`;
+            break;
+        case 'Native Design':
+             jsScript.src = `Native Design.js`;
     }
     head.appendChild(jsScript);
 }
 
+//Simple squidBase File To Load Other Components,
+//It will do some work in the future.
