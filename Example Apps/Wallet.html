@@ -1,0 +1,89 @@
+<!--- DO NOT MODIFY HTML STRUCTURE ONLY THE SCRIPT WITH THE
+      onStart FUNCTION !!!!!!!!!!!!! - KINDLY SENIOR DEV 🫠 --->
+<!-- OPTIMIZED FOR MOBILE --->
+<html>
+
+<head>
+    <title> squidBank Wallet </title>
+    <meta name="viewport" content="width=device-width, height=device-height">
+    <link rel="stylesheet" href="animate.css" />
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            /* Prevent scrolling */
+        }
+
+        #app-container {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            /* Allow vertical scrolling if needed */
+        }
+        :root {
+            --animate-duration: 700ms;
+        }
+    </style>
+
+</head>
+
+<body onload='onStart()' onoffline='appEvent("offline")' ononline='appEvent("online")'>
+    <div id='app-container'></div>
+    <script src="squidBase.js"></script>
+    <script>
+        loadInterface('Native Design')
+
+        function onStart() {
+            let height = window.innerHeight;
+            lay = ui.addLayout('Linear', '', null, null, 'main');
+            lay.setBackColor('#ECE0D9');
+        
+            lay2 = ui.addLayout('Card', '[]', 350, 150, lay);
+            lay2.setCornerRadius(5, 'px');
+            lay2.setBackColor('#007BFF');
+            lay2.setMargins(25,25,25)
+            //lay2.setMargins(25, 25, 25);
+            lay2.animate('animate__slideInDown')
+            lay2.setStyle({
+                background: 'rgba(0, 128, 0, 0.1)', // Green glassmorphic background
+                backdropFilter: 'blur(10px)',
+                border: '1px solid rgba(0, 128, 0, 0.2)', // Green border
+                borderRadius: '10px',
+                padding: '20px',
+            });
+
+
+            ht = ui.addText('Transaction History',null,null,'h3,Monospace,left',null,lay)
+            ht.setPosition(25,250)
+            ht.setTextColor('#333')
+            ht.animate('animate__slideInDown')
+            
+            mkpy = ui.addButton('Make Payment', 310, 50, null, lay)
+            mkpy.setPosition(25, height-84)
+            mkpy.animate('animate__slideInUp')
+            mkpy.setStyle({
+                backgroundColor: '#04AA6D',
+                border: 'none',
+                borderRadius: '5px',
+                color: 'white',
+                padding: '15px 32px',
+                textAlign: 'center',
+                textDecoration: 'none',
+                display: 'inline-block',
+                fontSize: '16px',
+                margin: '4px 2px',
+                cursor: 'pointer'
+            });
+            ui.render();
+        }
+    function appEvent(event){
+        alert(event)
+    }
+    </script>
+</body>
+
+</html>
