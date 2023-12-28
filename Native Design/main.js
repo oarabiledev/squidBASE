@@ -1,6 +1,7 @@
 import {buttonObj} from './button.js';
 import {textObject} from './text.js'
-
+import {ImageObject} from './image.js'
+import {videoObject} from './video.js'
 const screenWidth = window.innerWidth;
 const screenHeight = window.innerHeight;
 
@@ -222,3 +223,10 @@ ui.addText = function(text, width, height, options, classname, parentLay) {
     return new textObject(text, width, height, options, classname, parentLay);
 }
 
+ui.addImage = function(source, width, height, options, classname, parentLay){
+    return new ImageObject(source,width,height,options,classname,parentLay)
+}
+
+ui.addVideo = function(source, width, height, options, classname, parentLay){
+    return new videoObject(source, width,height, options, classname,parentLay)
+}
