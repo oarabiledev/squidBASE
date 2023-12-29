@@ -1,0 +1,38 @@
+<html>
+    
+<head>
+    <title>squidBase FrameWork</title>
+    <meta name="viewport" content="width=device-width, height=device-height">
+    <link rel="stylesheet" href="App_Core/animate.css" />
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            /* Prevent scrolling */
+        }
+
+        #app-container {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            /* Allow vertical scrolling if needed */
+        }
+
+        :root {
+            --animate-duration: 700ms;
+        }
+    </style>
+
+</head>
+
+<body onoffline='appEvent("offline")' ononline='appEvent("online")'>
+    <div id='app-container'></div>
+    <script type="module" src="./App_Core/standard_lib.mjs"></script>
+    <script type="module" src="./app.mjs"> </script>
+</body>
+
+</html>
