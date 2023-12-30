@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded',()=>{
 
 *//REMEMBER YOUR CODE MUST DOCUMENT ITSELF.*
 
-**NOTE: PROJECT DISCONTINUED**
+**NOTE: PROJECT DISCONTINUED TEMPORARILY**
 
 **WHY: After carefull consideration, it doesnt look like its worth wasting time and resources building a newer js framework when there are better frameworks in the likes of angular and react.**
 
