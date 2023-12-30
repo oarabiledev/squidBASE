@@ -3,6 +3,9 @@ import {textObject} from './text.mjs';
 import {ImageObject} from './image.mjs';
 import {videoObject} from './video.mjs';
 import {radioObject} from './radio.mjs';
+import {textfieldObject} from './textfield.mjs';
+import {switchObject} from './switch.mjs';
+import {popUpObject} from './popup.mjs';
 
 const screenWidth = window.innerWidth;
 const screenHeight = window.innerHeight;
@@ -235,4 +238,16 @@ ui.addVideo = function(source, width, height, options, classname, parentLay){
 
 ui.addRadio = function(radioName, id, classname, radioGroup, checkState, parentLay){
     return new radioObject(radioName, id, classname, radioGroup, checkState, parentLay);
+}
+
+ui.addTextField = function(type,searchHint,width,height,id,classname,parentLay){
+    return new textfieldObject(type,searchHint,width,height,id,classname,parentLay);
+}
+
+ui.addSwitch = function(width,height,checkState,id,classname,parentLay){
+    return new switchObject(width,height,checkState,id,classname,parentLay);
+}
+
+ui.addPopUp = function(text,width,height,id,classname,parentLay){
+    return new popUpObject(text,width,height,id,classname,parentLay);
 }
