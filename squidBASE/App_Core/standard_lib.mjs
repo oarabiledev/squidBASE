@@ -14,3 +14,23 @@ export function loadModule(interfaceName) {
     jsScript.src = 'Modules/' + interfaceName + '/' + 'main.mjs';
     head.appendChild(jsScript);
 }
+
+export function loadScript(dir){
+    const head = document.head;
+
+    const script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = ddir;
+    head.appendChild(script)
+}
+
+export function loadStyle(dir){
+    const head = document.head;
+
+    const style = document.createElement('link');
+    link.href = dir;
+    link.type = 'text/css';
+    link.rel = 'stylesheet';
+
+    head.appendChild(style)
+}
