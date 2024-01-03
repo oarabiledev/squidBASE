@@ -11,7 +11,7 @@ Id like to give special Thanks To Creators of Animate.css
 [Animate.css | A cross-browser library of CSS animations.](https://animate.style/)
 
 So as the contributors to beer.css which allow squidBASE to port Material Design 3
-[Beer.css | Build Material Design In Real Time](https://www.beercss.com/)
+[Beer.css | Build Material Design In Real Time.](https://www.beercss.com/)
 
 How This Works:
 
@@ -23,7 +23,7 @@ import { ui } from'./Modules/Native Design/main.mjs'
 function onStart(){
     const lay = ui.addLayout('Linear','FillXY,HCenter,Vertical',null,null,'main');
     
-    const fab = ui.addButton('Hey From squidBASE',350,50,null,null,lay)
+    const btn = ui.addButton('Hey From squidBASE',350,50,null,null,lay)
     ui.render();
 }
 
@@ -42,16 +42,6 @@ document.addEventListener('DOMContentLoaded',()=>{
 //CODE LOOKS AND FOLLOW BETTER CODING STANDARD.*
 
 *//REMEMBER YOUR CODE MUST DOCUMENT ITSELF.*
-
-**NOTE: PROJECT DISCONTINUED TEMPORARILY**
-
-**WHY: After carefull consideration, it doesnt look like its worth wasting time and resources building a newer js framework when there are better frameworks in the likes of angular and react.**
-
-**Also due to how the code is structured and the general idea the code is like building a 5 star hotel on-top of wooden planks, simply its brittle.**
-
-**A SHIMMER OF LIGHT IN THE DISTANT FUTURE:**
-
-*Although, even if this framework may not get the light of day all is not over the idea remains and hopefully after my strength and I’ve got more than enough confidence our 5 star hotel will be ready 🫠*
 
 **My Contacts:**
 
