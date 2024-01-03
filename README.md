@@ -10,36 +10,20 @@ Id like to give special Thanks To Creators of Animate.css
 
 [Animate.css | A cross-browser library of CSS animations.](https://animate.style/)
 
+So as the contributors to beer.css which allow squidBASE to port Material Design 3
+[Beer.css | Build Material Design In Real Time](https://www.beercss.com/)
+
 How This Works:
 
 All Your Code Is Placed Within the ‘app.mjs’ file and is references within index after the ‘standard_lib.mjs’ file has been loaded.
 
 ```jsx
-import { loadModule } from './App_Core/standard_lib.mjs';
-import {ui} from './Modules/Native Design/main.mjs';
-import {$} from './Modules/Translation Manager/main.mjs';
-
-loadModule('Native Design');
+import { ui } from'./Modules/Native Design/main.mjs'
 
 function onStart(){
-    const lay = ui.addLayout("Linear","FillXY",null,null,'main');
+    const lay = ui.addLayout('Linear','FillXY,HCenter,Vertical',null,null,'main');
     
-    const btn = ui.addButton($('HelloBtn','en'),350,50,null,lay)
-    btn.setStyle({
-        backgroundColor: '#04AA6D',
-        border: 'none',
-        borderRadius: '5px',
-        color: 'white',
-        padding: '15px 32px',
-        textAlign: 'center',
-        textDecoration: 'none',
-        display: 'inline-block',
-        fontSize: '16px',
-        margin: '4px 2px',
-        cursor: 'pointer'
-    });
-    btn.setOnTouch(()=>{
-    alert($('HelloAlert','tn'))})
+    const fab = ui.addButton('Hey From squidBASE',350,50,null,null,lay)
     ui.render();
 }
 
