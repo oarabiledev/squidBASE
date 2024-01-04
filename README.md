@@ -11,9 +11,10 @@ Id like to give special Thanks To Creators of Animate.css
 [Animate.css | A cross-browser library of CSS animations.](https://animate.style/)
 
 So as the contributors to beer.css which allow squidBASE to port Material Design 3
+
 [Beer.css | Build Material Design In Real Time.](https://www.beercss.com/)
 
-How This Works:
+### How This Works:
 
 All Your Code Is Placed Within the ‘app.mjs’ file and is references within index after the ‘standard_lib.mjs’ file has been loaded.
 
@@ -38,11 +39,16 @@ document.addEventListener('DOMContentLoaded',()=>{
     onStart();
 })
 ```
-**Project Discontinued**
+### **Project Discontinued**
+
 _why?_
 
 Its a passion project, we really dont need it its basically html at the end,
 I love it, and i did it to enhance my JS skills, i am a diehard JS Fan ^_~ .
+
+_Why not continue if its passion?_
+
+The project is not worth building.
 
 **My Contacts:**
 
