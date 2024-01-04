@@ -18,30 +18,31 @@ How This Works:
 All Your Code Is Placed Within the ‘app.mjs’ file and is references within index after the ‘standard_lib.mjs’ file has been loaded.
 
 ```jsx
-import { ui } from'./Modules/Native Design/main.mjs'
+import { ui,loadStyle } from'./App_Core/main.mjs'
 
+var textSearch;
 function onStart(){
     const lay = ui.addLayout('Linear','FillXY,HCenter,Vertical',null,null,'main');
     
-    const btn = ui.addButton('Hey From squidBASE',350,50,null,null,lay)
+    const btn = ui.addButton('Begin Your Search For squidBASE Packages 🤖',380,50,'search',null,lay)
+    btn.setOnTouch(()=>{
+        btn.animate('animate__backOutDown',()=>{
+            textSearch = ui.addTextField('text','Find Your squidBASE Packages 👻',380,50,'search',null,lay);
+            textSearch.animate('animate__backInDown');
+        });
+    });
     ui.render();
-}
-
-function appEvent(ev){
-    
 }
 
 document.addEventListener('DOMContentLoaded',()=>{
     onStart();
-});
+})
 ```
+**Project Discontinued**
+_why?_
 
-*//READ DOCUMENTATION ON USING COMPONENTS:*
-
-*//FEEL FREE TO CONTRIBUTE, YOU ARE ADVISED TO FOLLOW HOW
-//CODE LOOKS AND FOLLOW BETTER CODING STANDARD.*
-
-*//REMEMBER YOUR CODE MUST DOCUMENT ITSELF.*
+Its a passion project, we really dont need it its basically html at the end,
+I love it, and i did it to enhance my JS skills, i am a diehard JS Fan ^_~ .
 
 **My Contacts:**
 
