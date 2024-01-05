@@ -47,7 +47,7 @@ This project is very large, it will take long to get to 1.0 however this project
 squidBASE is made to make development easier and way faster, we all want that and I will deliver on that as long as I don't accidentally kick a bucket 😬.
 Hopefully someone will pick it up and if that happens,
 
- __top G don't forget to mention the OG__
+ _top G don't forget to mention the OG_
 
 Please your code submission must have your code clean, remember your code must always document itself and let's be nice, it doesn't cost to be nice and it don't cost to be the grinch, but it costs the project.
 
