@@ -39,16 +39,18 @@ document.addEventListener('DOMContentLoaded',()=>{
     onStart();
 })
 ```
-### **Project Discontinued**
+### **Project Contributing**
 
-_why?_
+_Why & How's?_
 
-Its a passion project, we really dont need it its basically html at the end,
-I love it, and i did it to enhance my JS skills, i am a diehard JS Fan ^_~ .
+This project is very large, it will take long to get to 1.0 however this project is getting sturdy with each update.
+squidBASE is made to make development easier and way faster, we all want that and I will deliver on that as long as I don't accidentally kick a bucket 😬.
+Hopefully someone will pick it up and if that happens,
 
-_Why not continue if its passion?_
+ __top G don't forget to mention the OG__
 
-The project is not worth building.
+Please your code submission must have your code clean, remember your code must always document itself and let's be nice, it doesn't cost to be nice and it don't cost to be the grinch, but it costs the project.
+
 
 **My Contacts:**
 
